@@ -7,4 +7,4 @@
 
 「秀丸マクロ」と「ECMAScript V8 Engine」と「.NET Framework 4.x」をシームレスに近い形で利用するためのライブラリとなります。
 
-- [詳細URL](https://秀丸マクロ.net/?page=nobu_tool_hm_ecmascript)
+[https://秀丸マクロ.net/?page=nobu_tool_hm_ecmascript](https://秀丸マクロ.net/?page=nobu_tool_hm_ecmascript)
