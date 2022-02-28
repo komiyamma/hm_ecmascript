@@ -1,2 +1,9 @@
-# hm_ecmascript
+# hmV8
 秀丸マクロと「V8 ECMAScript・.NET4」をシームレスにする。
+
+![hmV8 v1.9.4](https://img.shields.io/badge/hmV8-v1.9.3-6479ff.svg)
+[![Apache 2.0](https://img.shields.io/badge/license-Apache_2.0-blue.svg?style=flat)](LICENSE)
+![Hidemaru 8.73](https://img.shields.io/badge/Hidemaru-v8.98-6479ff.svg)
+![ECMAScript V8 9.8.177.9](https://img.shields.io/badge/V8-v9.8.177.9-6479ff.svg?logo=python&logoColor=white)
+
+秀丸マクロで「ECMAScript V8 Engine」と「.NET Framework 4.x」をシームレスに近い形で利用するためのライブラリとなります。
