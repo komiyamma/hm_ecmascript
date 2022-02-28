@@ -1,5 +1,4 @@
 # hmV8
-「秀丸マクロ」と「ECMAScript V8 Engine」と「.NET 4.x」をシームレスにする。
 
 ![hmV8 v1.9.4](https://img.shields.io/badge/hmV8-v1.9.3-6479ff.svg)
 [![Apache 2.0](https://img.shields.io/badge/license-Apache_2.0-blue.svg?style=flat)](LICENSE)
