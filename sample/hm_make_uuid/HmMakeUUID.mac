@@ -6,8 +6,8 @@ if (!#DLL ) { #DLL = loaddll(hidemarudir + @"\hmJS.dll"); }
 if (!#DLL ) { #DLL = loaddll(hidemarudir + @"\hmV8.dll"); }
 
 #_ = dllfuncw(#DLL, "DoString", R"JS(
-var uuid = clr.System.Guid.NewGuid().ToString();
-hm.OutputPane.Output(uuid + "\r\n")
+var str_uuid = clr.System.Guid.NewGuid().ToString();
+hm.OutputPane.Output(str_uuid + "\r\n")
 
 )JS"
 );
