@@ -1,0 +1,16 @@
+﻿/*
+ * This codes is licensed under CC0 1.0 Universal
+ */
+
+if (!#DLL ) { #DLL = loaddll(hidemarudir + @"\hmJS2.dll"); }
+if (!#DLL ) { #DLL = loaddll(hidemarudir + @"\hmV8.dll"); }
+
+#_ = dllfuncw(#DLL, "DoString", R"JS(
+var uuid = clr.System.Guid.NewGuid().ToString();
+hm.OutputPane.Output(uuid + "\r\n")
+
+)JS"
+);
+
+freedll( #DLL );
+
