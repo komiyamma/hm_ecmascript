@@ -101,6 +101,7 @@
     <Compile Include="Extension\Modules\ScriptModulePath.cs" />
     <Compile Include="Extension\Modules\ScriptModules.cs" />
     <Compile Include="Extension\NativeTypes\JArray.cs" />
+    <Compile Include="hmJSStaticLib\HmOriginalDecodeFunc.cs" />
     <Compile Include="hmJSStaticLib\HmOriginalEncodeFunc.cs" />
     <Compile Include="hmJSStaticLib\HmOriginalEncodeMap.cs" />
     <Compile Include="hmJSStaticLib\hmV8Console.cs" />
