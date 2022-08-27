@@ -156,6 +156,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="hidemaruexe_export.cpp" />
     <ClCompile Include="hmV8.cpp" />
     <ClCompile Include="string_converter.cpp" />

@@ -36,6 +36,10 @@ public class IV8StaticLib
     {
         return hmV8DynamicLib.BindDllHandle(dll);
     }
+    public static void SetJSModeExpression(String str)
+    {
+        hmV8DynamicLib.SetJSModeExpression(str);
+    }
 
     public static void SetCodePage(IntPtr cp)
     {
@@ -184,6 +188,13 @@ public sealed partial class hmV8DynamicLib
     {
         iDllBindHandle = dll.ToInt32();
         return dll;
+    }
+
+    static bool isJSModeLoaded = false;
+    static string strJSModeExpression = "";
+    public static void SetJSModeExpression(String str)
+    {
+        strJSModeExpression = str;
     }
 
     // dllのloaddllタイプによって、渡されたcmd(=expression)に対して、「dllの番号,」or「」を当てはめる処理
@@ -648,6 +659,12 @@ public sealed partial class hmV8DynamicLib
 
         try
         {
+            if (!isJSModeLoaded)
+            {
+                isJSModeLoaded = true;
+                engine.Evaluate(strJSModeExpression);
+            }
+
             // 文字列からソース生成
             engine.Evaluate(expression);
             return (IntPtr)1;
@@ -750,6 +767,7 @@ public sealed partial class hmV8DynamicLib
 
         SetCodePage((IntPtr)default_codepage);
         iDllBindHandle = 0;
+        isJSModeLoaded = false;
         tmpVar = null;
         iDebuggingPort = 0;
 
