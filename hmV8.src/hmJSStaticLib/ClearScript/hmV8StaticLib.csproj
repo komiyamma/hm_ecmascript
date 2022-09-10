@@ -108,6 +108,7 @@
     <Compile Include="hmJSStaticLib\HmOriginalEncodeMap.cs" />
     <Compile Include="hmJSStaticLib\hmV8Console.cs" />
     <Compile Include="hmJSStaticLib\hmV8DllPathResolver.cs" />
+    <Compile Include="hmJSStaticLib\hmV8HGlobalToString.cs" />
     <Compile Include="hmJSStaticLib\hmV8Hidemaru.cs" />
     <Compile Include="hmJSStaticLib\hmV8HidemaruDelegate.cs" />
     <Compile Include="hmJSStaticLib\hmV8HidemaruEdit.cs" />
