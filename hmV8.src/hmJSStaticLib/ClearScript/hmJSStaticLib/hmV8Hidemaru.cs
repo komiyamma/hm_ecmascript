@@ -53,6 +53,9 @@ public sealed partial class hmV8DynamicLib
                 if (number > Int32.MaxValue)
                 {
                     number = number - 4294967296;
+                    number = number - Int32.MinValue;
+                    number = number % 4294967296;
+                    number = number + Int32.MinValue;
                 }
                 else
                 {
@@ -64,6 +67,9 @@ public sealed partial class hmV8DynamicLib
                 if (number < Int32.MinValue)
                 {
                     number = number + 4294967296;
+                    number = number + Int32.MinValue;
+                    number = number % 4294967296;
+                    number = number - Int32.MinValue;
                 }
                 else
                 {
@@ -81,7 +87,6 @@ public sealed partial class hmV8DynamicLib
             intvar = ret_number;
             return success;
         }
-
 
         private static bool IsDoubleNumeric(object value)
         {
