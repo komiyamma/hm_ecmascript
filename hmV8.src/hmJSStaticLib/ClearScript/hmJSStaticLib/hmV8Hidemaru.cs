@@ -59,6 +59,17 @@ public sealed partial class hmV8DynamicLib
                     break;
                 }
             }
+            while (true)
+            {
+                if (number < Int32.MinValue)
+                {
+                    number = number + 4294967296;
+                }
+                else
+                {
+                    break;
+                }
+            }
 
             bool success = false;
             if (Int32.MinValue <= number && number <= Int32.MaxValue)
