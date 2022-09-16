@@ -113,7 +113,9 @@ public sealed partial class hmV8DynamicLib
             public static int Clear()
             {
                 //1009=クリア
-                return OutputPane.SendMessage(1009);
+                IntPtr r = OutputPane.SendMessage(1009);
+                int ret = (int)HmClamp<long>((long)r, Int32.MinValue, Int32.MaxValue);
+                return ret;
             }
 
             public static IntPtr WindowHandle
@@ -124,23 +126,15 @@ public sealed partial class hmV8DynamicLib
                 }
             }
 
-            public static int SendMessage(int commandID)
+            public static IntPtr SendMessage(int commandID)
             {
                 //
                 // loaddll "HmOutputPane.dll";
                 // #h=dllfunc("GetWindowHandle",hidemaruhandle(0));
                 // #ret=sendmessage(#h,0x111,1009,0);//1009=クリア 0x111=WM_COMMAND
                 //
-                IntPtr r = hmV8DynamicLib.SendMessage(OutputPane.WindowHandle, 0x111, commandID, IntPtr.Zero);
-                if ((long)r < (long)int.MinValue)
-                {
-                    r = (IntPtr)int.MinValue;
-                }
-                if ((long)r > (long)int.MaxValue)
-                {
-                    r = (IntPtr)int.MaxValue;
-                }
-                return (int)r;
+                IntPtr result = hmV8DynamicLib.SendMessage(OutputPane.WindowHandle, 0x111, commandID, IntPtr.Zero);
+                return result;
             }
 
             // Output枠へと出力する
