@@ -267,6 +267,13 @@ public sealed partial class hmV8DynamicLib
                     return text.toString().match(/\/\*([\s\S]*)\*\//)[1].toString();
                 }
 
+                function _stringify_replacer(key, value) {
+                    if (typeof value === ""function"") {
+                        return ""[fn]:"" + value.toString();
+                        }
+                    return value;
+                }
+
                 hm.Macro.Var = new Proxy(()=>{}, {
                     apply: function(target, that, args) {
                         if (args.length > 1 ) {

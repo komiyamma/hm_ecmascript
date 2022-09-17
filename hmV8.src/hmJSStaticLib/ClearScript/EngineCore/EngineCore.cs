@@ -55,6 +55,7 @@ namespace hmV8DynamicNS
             NativeModules["host"] = new NativeModule("host", loader, new ExtendedHostFunctions());
 
             engine.AddHostObject("clr", new HostTypeCollection("mscorlib", "System", "System.Core"));
+            engine.AddHostObject("", HostItemFlags.GlobalMembers, new HostTypeCollection("mscorlib", "System", "System.Core"));
             engine.AddHostObject("host", new ExtendedHostFunctions());
 
             foreach (var script in ScriptModules.Scripts.Keys)
