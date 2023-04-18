@@ -23,6 +23,12 @@ public sealed partial class hmV8DynamicLib
 
             }
 
+            public static IntPtr _SendMessage(int hWnd, uint msg, int wparam, int lparam)
+            {
+                return hmV8DynamicLib.SendMessage((IntPtr)hWnd, (uint)msg, (int)wparam, (IntPtr)lparam);
+            }
+
+
             // マクロでの問い合わせ結果系
             public interface IResult
             {

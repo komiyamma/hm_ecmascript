@@ -4,7 +4,9 @@
  */
 
 using System;
+using System.IO;
 using System.Runtime.InteropServices;
+using System.Text;
 
 // ★秀丸クラス
 public sealed partial class hmV8DynamicLib
@@ -17,6 +19,45 @@ public sealed partial class hmV8DynamicLib
             {
                 SetUnManagedDll();
             }
+
+            public static int _SaveTextFile(string filepath, string text, string encoding_name)
+            {
+                try
+                {
+                    // 保存するエンコード
+                    System.Text.Encoding encoding = System.Text.Encoding.UTF8;
+                    if (encoding_name == "utf8")
+                    {
+                        encoding = new UTF8Encoding(false); // BOM付かず
+                    }
+                    else if (encoding_name == "utf8bom")
+                    {
+                        encoding = new UTF8Encoding(true); // BOM付き
+                    }
+                    else if (encoding_name == "utf16")
+                    {
+                        encoding = System.Text.Encoding.Unicode;
+                    }
+                    else if (encoding_name == "sjis")
+                    {
+                        encoding = System.Text.Encoding.GetEncoding("shift_jis");
+                    }
+
+                    // ファイルにテキストを保存
+                    using (StreamWriter writer = new StreamWriter(filepath, false, encoding))
+                    {
+                        writer.Write(text);
+                    }
+
+                    return 1;
+                }
+                catch (Exception)
+                {
+                }
+
+                return 0;
+            }
+
 
             public interface IHidemaruEncoding
             {
