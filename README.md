@@ -1,6 +1,6 @@
 # hmV8
 
-![hmV8 v2.0.0](https://img.shields.io/badge/hmV8-v2.0.0-6479ff.svg)
+![hmV8 v2.0.1](https://img.shields.io/badge/hmV8-v2.0.1-6479ff.svg)
 [![Apache 2.0](https://img.shields.io/badge/license-Apache_2.0-blue.svg?style=flat)](LICENSE)
 ![Hidemaru 8.73](https://img.shields.io/badge/Hidemaru-v8.73-6479ff.svg)
 ![ECMAScript V8 9.9.115.8](https://img.shields.io/badge/V8-v10.1.124.11-6479ff.svg?logo=v8&logoColor=white)
