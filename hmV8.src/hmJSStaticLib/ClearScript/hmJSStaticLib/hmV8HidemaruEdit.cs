@@ -177,7 +177,15 @@ public sealed partial class hmV8DynamicLib
                 }
                 set
                 {
-                    SetTotalText(value);
+                    // 935.β6以降は、settotaltext() が実装された。
+                    if (version >= 935.06)
+                    {
+                        SetTotalText2(value);
+                    }
+                    else
+                    {
+                        SetTotalText(value);
+                    }
                 }
             }
 
@@ -224,6 +232,33 @@ public sealed partial class hmV8DynamicLib
                 Macro._Eval(cmd);
                 SetTmpVar(null);
             }
+
+            private static void SetTotalText2(String value)
+            {
+                if (version < 866)
+                {
+                    OutputDebugStream(ErrorMsg.MethodNeed866);
+                    return;
+                }
+
+
+
+                int dll = iDllBindHandle;
+
+                if (dll == 0)
+                {
+                    throw new NullReferenceException(ErrorMsg.NoDllBindHandle866);
+                }
+
+
+                SetTmpVar(value);
+                String cmd = ModifyFuncCallByDllType(
+                    "settotaltext dllfuncstrw( {0} \"PopStrVar\" );\n"
+                );
+                Macro._Eval(cmd);
+                SetTmpVar(null);
+            }
+
 
             /// <summary>
             ///  SelecetdText
