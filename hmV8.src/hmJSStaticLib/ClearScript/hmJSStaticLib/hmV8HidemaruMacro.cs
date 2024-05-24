@@ -331,7 +331,7 @@ public sealed partial class hmV8DynamicLib
                                 }
                                 else
                                 {
-                                    System.Diagnostics.Trace.WriteLine("渡された Arrayに数値型と文字列型などの異なる型が入り混じっています");
+                                    OutputDebugStream("渡された Arrayに数値型と文字列型などの異なる型が入り混じっています");
                                 }
                             }
                             catch (Exception)

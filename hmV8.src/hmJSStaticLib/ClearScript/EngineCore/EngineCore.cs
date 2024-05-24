@@ -95,7 +95,7 @@ namespace hmV8DynamicNS
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Trace.WriteLine(ex.GetScriptStack());
+                hmV8DynamicLib.OutputDebugStream(ex.GetScriptStack());
                 Sleeping = true;
                 throw;
             }

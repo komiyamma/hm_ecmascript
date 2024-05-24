@@ -85,7 +85,7 @@ public sealed partial class hmV8DynamicLib
                 }
                 catch (Exception e)
                 {
-                    System.Diagnostics.Trace.WriteLine(e);
+                    OutputDebugStream(e);
                 }
 
                 return "";
