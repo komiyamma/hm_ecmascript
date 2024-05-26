@@ -25,6 +25,7 @@
  hidemaru.sendMessage = function(h, m, l, w) { return hm.Macro._SendMessage(h, m, l, w); };
  hidemaru.getCursorPos = function() { var cpos = hm.Edit.CursorPos; return [cpos.lineno, cpos.column]; };
  hidemaru.getCursorPosFromMousePos = function() { var cpos = hm.Edit.MousePos; return [cpos.lineno, cpos.column]; };
+ hidemaru.getPixelPosFromCursorPos = function() { return [hm.Macro.Var("ypixel"), hm.Macro.Var("xpixel")]; }
 
  var gtv = hidemaru.getVar;
  var evm = hidemaru.evalMacro;
@@ -702,7 +703,7 @@
  hg.sleep = function(){var m="sleep";eval(st);return r;};if(f)sleep=hg.sleep;
  hg.setcompatiblemode = function(){var m="setcompatiblemode";eval(fn);return r;};if(f)setcompatiblemode=hg.setcompatiblemode;
  hg.setfloatmode = function(){var m="setfloatmode";eval(st);return r;};if(f)setfloatmode=hg.setfloatmode;
- hg.seterrormode = function(){var m="seterrormode";eval(st);return r;};if(f)seterrormode=hg.seterrormode;
+ hg.seterrormode = function(){var m="seterrormode";eval(fn);return r;};if(f)seterrormode=hg.seterrormode;
  hg.setbackgroundmode = function(){var m="setbackgroundmode";eval(st);return r;};if(f)setbackgroundmode=hg.setbackgroundmode;
 
  hg.inputpos = function(){var m="inputpos";eval(st);return r;};if(f)inputpos=hg.inputpos;
