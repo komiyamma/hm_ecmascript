@@ -224,6 +224,7 @@ public sealed partial class hmV8DynamicLib
                 SetTmpVar(value);
                 String cmd = ModifyFuncCallByDllType(
                     "begingroupundo;\n" +
+                    "rangeeditout;\n" +
                     "selectall;\n" +
                     "insert dllfuncstrw( {0} \"PopStrVar\" );\n" +
                     "endgroupundo;\n"
