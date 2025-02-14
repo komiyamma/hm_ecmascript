@@ -348,6 +348,7 @@
  hg.quote = function(){var m="quote";eval(fs);return r;};if(f)quote=hg.quote;
  hg.strreplace = function(){var m="strreplace";eval(fs);return r;};if(f)strreplace=hg.strreplace;
  hg.getimecandidate = function(){var m="getimecandidate";eval(fs);return r;};if(f)getimecandidate=hg.getimecandidate;
+ hg.getdpi = function(){return hm.Macro.Function("getdpi").Result;};if(f)getdpi=hg.getdpi;
 
  hg.newfile = function(){var m="newfile";eval(st);return r;};if(f)newfile=hg.newfile;
  hg.openfile = function(){var m="openfile";eval(st);return r;};if(f)openfile=hg.openfile;
