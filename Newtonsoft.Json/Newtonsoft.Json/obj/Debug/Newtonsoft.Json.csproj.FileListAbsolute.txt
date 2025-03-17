@@ -1,0 +1,2 @@
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.csproj.AssemblyReference.cache
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.csproj.CoreCompileInputs.cache

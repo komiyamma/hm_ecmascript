@@ -1,0 +1,7 @@
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\bin\Release\net45\Newtonsoft.Json.dll
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net45\Newtonsoft.Json.csproj.AssemblyReference.cache
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net45\Newtonsoft.Json.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net45\Newtonsoft.Json.AssemblyInfoInputs.cache
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net45\Newtonsoft.Json.AssemblyInfo.cs
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net45\Newtonsoft.Json.csproj.CoreCompileInputs.cache
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net45\Newtonsoft.Json.dll

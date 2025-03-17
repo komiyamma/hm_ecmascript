@@ -1,0 +1,10 @@
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\bin\Release\net471\abc.dll
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\bin\Release\net471\abc.pdb
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net471\abc.csproj.AssemblyReference.cache
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net471\abc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net471\abc.AssemblyInfoInputs.cache
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net471\abc.AssemblyInfo.cs
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net471\abc.csproj.CoreCompileInputs.cache
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net471\abc.sourcelink.json
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net471\abc.dll
+C:\Users\master\source\repos\Newtonsoft.Json\Newtonsoft.Json\obj\Release\net471\abc.pdb
